@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+</head>
+<body>
+<main>
+	<h1 id="Title">Survey Form
+	</h1>
+	<div>
+	<p id="descrition">Let us know how we can improve your experience!
+	</p>
+	<form id="survey-form">
+
+		<div class="rowTab">
+		<div class="labels">
+		<label id="name-label" for="name">* Name:
+		</label>
+		</div>
+		<div class="rightTab">
+		<input autofocus type="text" name="name" id="name" placeholder="Enter your Name" class="input-field" required>
+		</div>	
+		</div>
+
+		<div class="rowTab">
+		<div class="labels">
+		<label id="name-label" for="email">* Email:
+		</label>
+		</div>
+		<div class="rightTab">
+		<input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>	
+		</div>
+		</div>
+
+		<div class="rowTab">
+		<div class="labels">
+		<label id="number-label" for="number">* Age:
+		</label>
+		</div>
+		<div class="rightTab">
+		<input type="number" min="1" max="125" name="number" id="number" class="input-field" placeholder="Age" required>	
+		</div>
+		</div>
+
+		<div class="rowTab">
+		<div class="labels">
+		<label id="dropdown-label" for="position">Which option best describes your role?
+		</label>
+		</div>
+		<div class="rightTab">
+		<select name="position" id="dropdown" class="dropdown" placeholder="Age" required>
+		<option disabled>Select an option</option>
+		<option>Student</option>
+		<option>Full Time Job</option>
+		<option>Full Time Learner</option>
+		<option>Prefer not ot say</option>
+		<option>Other</option>		
+		</select> 
+		</div>
+		</div>
+
+		<div class="rowTab">
+		<div class="labels">
+		<label id="userRating-label" for="userRating">* How likely is it that you would recommend us to a friend?
+		</label>
+		</div>
+		<div class="rightTab">
+			<ul style="list-style: none;">
+		<li class="radio">
+		<label>Definitely</label>
+		<input type="radio" name="radio-buttons" value="1" id="number" class="radio" required>		
+		</li>
+		<li class="radio">
+		<label>Maybe</label>
+		<input type="radio" name="radio-buttons" value="2" id="number" class="userRatings" required>
+		</li>
+		<li class="userRatings">
+		<label>Not Sure</label>
+		<input type="radio" name="radio-buttons" value="3" id="number" class="userRatings" required>		
+		</li>	
+		</ul>
+		</div>
+		</div>
+
+		<div class="rowTab">
+		<div class="labels">
+		<label for="most-like">What do you like most about us?
+		</label>
+		</div>
+		<div class="rightTab">
+		<select name="mostLike" id="most-like" class="dropdown" placeholder="Age" required>
+		<option disabled>Select an option</option>
+		<option>Challenges</option>
+		<option>Projects</option>
+		<option>Community</option>
+		<option>Open Source</option>
+		</select> 
+		</div>
+		</div>
+
+		<div class="rowTab">
+		<div class="labels">
+		<label id="userRating-label" for="preferences">What things can we improve? <br>(Check all that apply)
+		</label>
+		</div>
+		<div class="rightTab">
+			<ul style="list-style: none;">
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="1" id="number" class="userRatings" required>
+		<label>Front-end Projects</label>		
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="2" id="number" class="userRatings" required>
+		<label>Back-end Projects</label>
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="3" id="number" class="userRatings" required>
+		<label>Data Visualization</label>	
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="4" id="number" class="userRatings" required>
+		<label>Challenges</label>	
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="5" id="number" class="userRatings" required>
+		<label>Open Source Community</label>	
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="6" id="number" class="userRatings" required>
+		<label>Gitter help rooms</label>	
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="7" id="number" class="userRatings" required>
+		<label>Videos</label>	
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="8" id="number" class="userRatings" required>
+		<label>City Meetups</label>	
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="9" id="number" class="userRatings" required>
+		<label>Wiki</label>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="10" id="number" class="userRatings" required>
+		<label>Forum</label>	
+		</li>
+		<li class="checkbox">
+		<input type="checkbox" name="prefer" value="11" id="number" class="userRatings" required>
+		<label>Additional Courses</label>	
+		</li>	
+		</li>	
+		</ul>
+		</div>
+		</div>
+
+		<div class="rowTab">
+		<div class="labels">
+		<label id="comments-label" for="comment">Any Comments or Suggestions?
+		</label>
+		</div>
+		<div class="rightTab">
+		<textarea id="comments" class="input-field" style="height:50px;resize:vertical" name="comment" placeholder="Enter your comment here..."></textarea> 
+		</div>	
+		</div>
+		<button id="submit" type="submit">Submit</button>
+	</form>
+</div>
+</main>
+</body>
+</html>
